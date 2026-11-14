@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if ever used)
+node_modules/
+npm-debug.log*
+
+# Jekyll (kept for reference, not built here)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Scratch / notes
+github-front-page
+*.bak
+*.tmp
