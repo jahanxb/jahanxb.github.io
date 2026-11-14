@@ -1,26 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
-  <rect width="400" height="220" fill="#FDF5F7" rx="6"/>
-  <!-- Road segments -->
-  <line x1="60" y1="110" x2="340" y2="110" stroke="#9E1B32" stroke-width="4"/>
-  <line x1="60" y1="110" x2="60" y2="30" stroke="#9E1B32" stroke-width="3"/>
-  <line x1="340" y1="110" x2="340" y2="30" stroke="#9E1B32" stroke-width="3"/>
-  <line x1="200" y1="110" x2="200" y2="30" stroke="#9E1B32" stroke-width="3" stroke-dasharray="6,4"/>
-  <!-- Roadside units -->
-  <rect x="44" y="20" width="32" height="32" fill="#f0dde1" stroke="#9E1B32" stroke-width="2" rx="4"/>
-  <text x="60" y="40" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#9E1B32" font-weight="700">RSU</text>
-  <rect x="184" y="20" width="32" height="32" fill="#f0dde1" stroke="#9E1B32" stroke-width="2" rx="4"/>
-  <text x="200" y="40" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#9E1B32" font-weight="700">RSU</text>
-  <rect x="324" y="20" width="32" height="32" fill="#f0dde1" stroke="#9E1B32" stroke-width="2" rx="4"/>
-  <text x="340" y="40" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#9E1B32" font-weight="700">RSU</text>
-  <!-- Central server -->
-  <rect x="160" y="145" width="80" height="40" fill="#9E1B32" rx="6"/>
-  <text x="200" y="170" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fff" font-weight="700">Server</text>
-  <!-- Connections to server -->
-  <line x1="60" y1="52" x2="175" y2="150" stroke="#9E1B32" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
-  <line x1="200" y1="52" x2="200" y2="145" stroke="#9E1B32" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
-  <line x1="340" y1="52" x2="225" y2="150" stroke="#9E1B32" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
-  <!-- Lock icon -->
-  <rect x="186" y="156" width="10" height="8" fill="#fff" rx="1" opacity="0.6"/>
-  <path d="M188,156 v-3 a3,3 0 0,1 6,0 v3" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#9E1B32" font-weight="700">Federated Traffic Prediction — replace with research figure</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="600" height="360" fill="#ffffff"/>
+  <rect x="0" y="0" width="600" height="5" fill="#9E1B32"/>
+  <rect x="40" y="40" width="520" height="280" rx="6" fill="#fdf5f7"/>
+  <text x="300" y="175" text-anchor="middle" font-family="Raleway, Arial, sans-serif" font-size="72" font-weight="700" fill="#9E1B32" opacity="0.12">FL</text>
+  <text x="300" y="183" text-anchor="middle" font-family="Raleway, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="4" fill="#9E1B32">FED-T</text>
+  <line x1="210" y1="210" x2="390" y2="210" stroke="#9E1B32" stroke-width="1.5" opacity="0.25"/>
+  <text x="300" y="235" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="13" fill="#888">Privacy-Preserving Federated Traffic Prediction</text>
+  <text x="300" y="295" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="11" fill="#bbb">Replace with: assets/img/research-fl-traffic.jpg</text>
 </svg>
