@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280">
+  <rect width="280" height="280" fill="#fff" rx="4"/>
+  <circle cx="140" cy="100" r="52" fill="#f0dde1"/>
+  <circle cx="140" cy="100" r="44" fill="#e0b8c0"/>
+  <ellipse cx="140" cy="210" rx="76" ry="54" fill="#f0dde1"/>
+  <ellipse cx="140" cy="204" rx="66" ry="48" fill="#e0b8c0"/>
+  <circle cx="140" cy="98" r="38" fill="#9E1B32" opacity="0.15"/>
+  <text x="140" y="265" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9E1B32" font-weight="600">Profile Photo — replace with assets/img/profile.jpg</text>
+  <text x="140" y="140" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#9E1B32" font-weight="700">MJK</text>
+</svg>

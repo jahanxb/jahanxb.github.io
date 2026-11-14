@@ -1,217 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Jahanzeb Khan</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom CSS to emulate GitHub Pages theme
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f8f8;
-        }
-        .navbar {
-            background-color: #333;
-            border: none;
-        }
-        .navbar-brand, .navbar-nav > li > a {
-            color: #fff !important;
-        }
-        .navbar-nav > li > a:hover {
-            background-color: #555;
-        }
-        .jumbotron {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #24292e;
-            font-weight: 600;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .list-group-item {
-            border: none;
-            padding: 10px 0;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            margin-top: 40px;
-        }
-    </style> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhammad Jahanzeb Khan | Ph.D. Candidate in Computer Science</title>
+  <meta name="description" content="Muhammad Jahanzeb Khan, Ph.D. candidate in Computer Science at The University of Alabama, researching the security of machine learning for connected and automated vehicles.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jahanxb.github.io/">
+  <meta property="og:title" content="Muhammad Jahanzeb Khan | Ph.D. Candidate in Computer Science">
+  <meta property="og:description" content="Muhammad Jahanzeb Khan, Ph.D. candidate in Computer Science at The University of Alabama, researching the security of machine learning for connected and automated vehicles.">
+  <meta property="og:image" content="https://jahanxb.github.io/assets/img/profile.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Muhammad Jahanzeb Khan | Ph.D. Candidate in Computer Science">
+  <meta name="twitter:description" content="Muhammad Jahanzeb Khan, Ph.D. candidate in Computer Science at The University of Alabama, researching the security of machine learning for connected and automated vehicles.">
+  <meta name="twitter:image" content="https://jahanxb.github.io/assets/img/profile.svg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Jahanzeb Khan",
+    "jobTitle": "Ph.D. Candidate in Computer Science",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "The University of Alabama"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jahanxb-khan/",
+      "https://scholar.google.com/citations?user=w1_pqnoAAAAJ",
+      "https://github.com/jahanxb"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Boxicons 2.1.4 -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Academicons 1.9.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+
+  <!-- AOS 2.3.4 -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap 4.6 (grid/utilities only) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Muhammad Jahanzeb Khan</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Muhammad Jahanzeb Khan</h1>
-            <p>I am currently pursuing a PhD at the University of Alabama, Tuscaloosa, focusing on federated learning, cryptography, and privacy preservation in AI.</p>
-            <p>
-                <a href="https://scholar.google.com/citations?user=w1_pqnoAAAAJ&hl=en">Google Scholar</a> |
-                <a href="https://github.com/jahanxb">GitHub</a> |
-                <a href="https://www.linkedin.com/in/jahanxb-khan/">LinkedIn</a>
-            </p>
-        </div>
-
-        <div class="section" id="education">
-            <h2>Education</h2>
-            <div class="list-group">
-                <div class="list-group-item">
-                    <h3>Doctor of Philosophy in Computer Science (PhD CS)</h3>
-                    <p>University of Alabama, Tuscaloosa, USA<br>May 2024 – Present</p>
-                </div>
-                <div class="list-group-item">
-                    <h3>Master of Science in Computer Science and Engineering (MS CSE) - Transfered to Alabama</h3>
-                    <p>University of Nevada, Reno, USA<br>January 2022 – May 2024</p>
-                </div>
-                <div class="list-group-item">
-                    <h3>Master of Science in Software Engineering (MSSE)</h3>
-                    <p>Shanghai Jiao Tong University, China<br>September 2017 – December 2019</p>
-                </div>
-                <div class="list-group-item">
-                    <h3>Bachelor of Science in Computer Science (BSCS)</h3>
-                    <p>NFCIET MULTAN, Pakistan<br>October 2012 – August 2016</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="experience">
-            <h2>Work Experience</h2>
-            <div class="list-group">
-                <div class="list-group-item">
-                    <h3>Backend Developer</h3>
-                    <p>Pixarsart<br>January 2021 – December 2021</p>
-                </div>
-                <div class="list-group-item">
-                    <h3>Backend & DevOps Engineer</h3>
-                    <p>Meecube<br>January 2020 – January 2021</p>
-                </div>
-                <div class="list-group-item">
-                    <h3>Junior Data Scientist</h3>
-                    <p>Block Dynamics<br>September 2019 – January 2020</p>
-                </div>
-                <div class="list-group-item">
-                    <h3>Other Roles</h3>
-                    <ul>
-                        <li>.Net Developer (Trainee Intern) at Wicresoft (May 2019 – August 2019)</li>
-                        <li>Java Developer (Intern) at KSJ Cloud (June 2018 – September 2018)</li>
-                        <li>Associate Software Engineer at TSCreators (September 2016 – September 2017)</li>
-                        <li>Web Development Instructor at Punjab Skill Development Fund (October 2016 – May 2017)</li>
-                        <li>Computer Science Lecturer at Pakistan Institute of Engineering and Technology (September 2016 – August 2017)</li>
-                        <li>IT Intern at National Savings Organization, Pakistan (June 2014 – August 2014)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="publications">
-            <h2>Selected Publications</h2>
-            <div class="list-group">
-                <div class="list-group-item">
-                    <p><strong>Privacy-Preserving Artificial Intelligence on Edge Devices: A Homomorphic Encryption Approach</strong><br><em>31st IEEE International Conference on Web Services (ICWS)</em>, 2024</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Exploring the Efficacy of Data-Decoupled Federated Learning for Image Classification and Medical Imaging Analysis</strong><br><em>International Workshop on Federated Learning for Distributed Data Mining, KDD'23</em>, 2023</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Efficient and Privacy-Preserving ConvLSTM-based Detection of Electricity Theft Cyber-Attacks in Smart Grids</strong><br><em>IEEE Access</em>, 2024</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Privacy-Enhanced Image Restoration in Remote Sensing via Federated Learning</strong><br><em>12th International Symposium on Digital Forensics and Security (ISDFS)</em>, 2024</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Object Detection Boosting Using Object Attributes in Detect and Describe Framework</strong><br><em>2019 IEEE 31st International Conference on Tools with Artificial Intelligence</em>, 2019</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Data Provenance Based System for Classification and Linear Regression in Distributed Machine Learning</strong><br><em>International Workshop on Structured Object-Oriented Formal Language and Method</em>, 2019</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Mapping Socioeconomic Conditions Using Satellite Imagery: A Computer Vision Approach for Developing Countries</strong><br><em>Journal of Economy and Technology</em>, 2023</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="projects">
-            <h2>Projects</h2>
-            <div class="list-group">
-                <div class="list-group-item">
-                    <p><strong>FlushApp</strong>: A home maintenance service marketplace connecting providers and users with features like price estimation and profile ranking.</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Avosplay</strong>: A group live video streaming and entertainment app with audio and video conferencing capabilities.</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Drivepoints.co</strong>: A car insurance platform that detects user routes and suggests safe real-time routes based on third-party API data.</p>
-                </div>
-                <div class="list-group-item">
-                    <p><strong>Meecube.com</strong>: A platform for building microservices and integrating with existing systems, handling over 9000 requests per second.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>AI Tools</strong>: Expertise in PyTorch, TensorFlow, CNNs, RNNs, and transformer models.</li>
-                <li><strong>Federated Learning</strong>: Proficient in PySyft, FlowerFL, FedML, PyTorch FL.</li>
-                <li><strong>Cryptography</strong>: Homomorphic Encryptions, Functional Encryption, Public Key Encryptions, Digital Signatures.</li>
-                <li><strong>Programming Languages</strong>: Python, JavaScript, C, VB.NET, Java, Bash.</li>
-                <li><strong>Operating Systems</strong>: Windows, Linux, macOS.</li>
-                <li><strong>Database Management</strong>: MongoDB, MySQL, PostgreSQL, Apache Cassandra, Redis.</li>
-                <li><strong>DevOps Tools</strong>: Docker, GitLab, Jenkins, AWS, Google Cloud, RabbitMQ.</li>
-                <li><strong>Analytical Skills</strong>: Good problem-solving through research in AI, encryption, and data processing.</li>
-                <li><strong>Frontend</strong>: HTML, CSS, ReactJS, jQuery.</li>
-            </ul>
-        </div>
+  <!-- ======= Sidebar / Header ======= -->
+  <header id="header">
+    <div class="profile">
+      <img src="assets/img/profile.svg" alt="Muhammad Jahanzeb Khan profile photo placeholder">
+      <h1><a href="#hero">Jahanzeb Khan</a></h1>
+      <p class="subtitle">Ph.D. Candidate, CS<br>University of Alabama</p>
+      <div class="social-links mt-3">
+        <a href="https://www.linkedin.com/in/jahanxb-khan/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=w1_pqnoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar profile"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/jahanxb" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="bx bxl-github"></i></a>
+        <a href="assets/cv/MuhammadJahanzebKhan_CV.pdf" target="_blank" rel="noopener" aria-label="Curriculum Vitae PDF"><i class="bx bx-file"></i></a>
+      </div>
     </div>
- <!-- Footer -->
- <footer>
-    <p>&copy; 2025 Muhammad Jahanzeb Khan</p>
-</footer>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#news"><i class="bx bx-news"></i> <span>News</span></a></li>
+        <li><a href="#biography"><i class="bx bx-file-blank"></i> <span>Biography</span></a></li>
+        <li><a href="#research"><i class="bx bx-search-alt"></i> <span>Research</span></a></li>
+        <li><a href="#publications"><i class="bx bx-book-content"></i> <span>Publications</span></a></li>
+        <li><a href="#teaching"><i class="bx bx-chalkboard"></i> <span>Teaching</span></a></li>
+        <li><a href="assets/cv/MuhammadJahanzebKhan_CV.pdf" target="_blank" rel="noopener"><i class="bx bx-download"></i> <span>CV (PDF)</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <i class="bx bx-menu"></i>
+  </button>
+
+  <!-- ======= Hero ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Muhammad Jahanzeb Khan</h1>
+      <p class="hero-subtitle">Ph.D. Candidate in Computer Science, The University of Alabama</p>
+      <p class="typed-wrapper">
+        <span class="typed" data-typed-items="Adversarial ML Researcher,Security of Connected Vehicles,Federated Learning Security,Ph.D. Candidate, CS at UA"></span>
+      </p>
+      <div class="hero-btns">
+        <a href="#about" class="btn-crimson">About Me</a>
+        <a href="assets/cv/MuhammadJahanzebKhan_CV.pdf" target="_blank" rel="noopener" class="btn-outline-crimson">CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Me</h2>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 text-center mb-4">
+            <img src="assets/img/profile.svg" alt="Muhammad Jahanzeb Khan" class="profile-img">
+          </div>
+          <div class="col-lg-8">
+            <h3>Muhammad Jahanzeb Khan</h3>
+            <p>I am a Ph.D. candidate in Computer Science at The University of Alabama, advised by Dr. Ahmad Alsharif. My research studies how machine learning systems in connected and automated vehicles fail under attack, and how to defend them. My dissertation, <em>Adversarial Threats and Defenses Across Trust Boundaries in Connected and Automated Vehicles</em>, covers adversarial attacks on traffic sign recognition, detection of poisoning in federated learning, and secure communication for electric vehicle charging.</p>
+            <p>Before my Ph.D., I worked for five years as a software engineer in backend development, DevOps, and data engineering, including leading a cross-functional team. I hold an M.S. in Computer Science from the University of Nevada, Reno, an M.S. in Software Engineering from Shanghai Jiao Tong University, and a B.S. in Computer Science from NFC Institute of Engineering and Technology. I have taught undergraduate courses and mentored undergraduate researchers in NSF REU programs for four summers.</p>
+            <p>I will complete my Ph.D. in Spring 2027.</p>
+          </div>
+        </div>
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-12 research-interests">
+            <h4>Research Interests</h4>
+            <ul>
+              <li>Adversarial machine learning</li>
+              <li>Security and robustness of federated learning</li>
+              <li>Privacy-preserving AI and encrypted computation</li>
+              <li>Applied cryptography and secure communication for connected vehicles and EV charging</li>
+              <li>Security of LLM-based systems and agents</li>
+              <li>Trustworthy AI for cyber-physical systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= News ======= -->
+    <section id="news" class="section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>News</h2>
+        </div>
+        <ul class="news-list" data-aos="fade-up" data-aos-delay="100">
+          <li><strong>2026:</strong> Paper on KL-divergence poisoning detection for vehicular federated learning accepted at IEEE ITSC 2026 and shortlisted for the Best Paper Award.</li>
+          <li><strong>2026:</strong> Demo on certificateless, non-interactive key establishment for secure EV charging presented at USENIX VehicleSec 2026, supported by a University of Alabama Graduate School Travel Grant.</li>
+          <li><strong>2026:</strong> Paper on query-free adversarial malware generation with conditional diffusion at IEEE SATC 2026.</li>
+          <li><strong>2026:</strong> Mentored an NSF REU project on adversarial patches against drone-based vehicle detection.</li>
+          <li><strong>2024:</strong> Joined The University of Alabama as a Ph.D. student; completed M.S. in Computer Science at the University of Nevada, Reno.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======= Biography ======= -->
+    <section id="biography" class="biography">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Biography</h2>
+        </div>
+        <div class="row">
+          <!-- Education -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-item">
+              <h4>Ph.D., Computer Science</h4>
+              <span class="date-badge">May 2024 to Spring 2027 (expected)</span>
+              <p><em>The University of Alabama, Tuscaloosa, AL</em></p>
+              <p><strong>Advisor:</strong> Dr. Ahmad Alsharif</p>
+              <p>Proposal defended; admitted to candidacy.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>M.S., Computer Science</h4>
+              <span class="date-badge">Jan 2022 to May 2024</span>
+              <p><em>University of Nevada, Reno, NV</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>M.S., Software Engineering</h4>
+              <span class="date-badge">Sep 2017 to Dec 2019</span>
+              <p><em>Shanghai Jiao Tong University, Shanghai, China</em></p>
+              <p>Chinese Government Scholarship (CSC)</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>B.S., Computer Science</h4>
+              <span class="date-badge">Oct 2012 to Aug 2016</span>
+              <p><em>NFC Institute of Engineering and Technology, Multan, Pakistan</em></p>
+              <p>Academic Excellence Award (2015)</p>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Research Experience</h3>
+
+            <div class="resume-item">
+              <h4>Graduate Research Assistant</h4>
+              <span class="date-badge">May 2024 to Present</span>
+              <p><em>The University of Alabama</em></p>
+              <p>Security of machine learning for connected vehicles; secure EV charging communication; mentoring NSF REU students.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Graduate Research Assistant</h4>
+              <span class="date-badge">Jan 2022 to May 2024</span>
+              <p><em>University of Nevada, Reno</em></p>
+              <p>Federated learning, privacy-preserving machine learning, and encrypted computation; supported by NSF funding.</p>
+            </div>
+
+            <h3 class="resume-title mt-4">Industry Experience</h3>
+
+            <div class="resume-item">
+              <h4>Backend Developer and Team Lead</h4>
+              <span class="date-badge">Jan 2021 to Dec 2021</span>
+              <p><em>Pixarsart Studios (Plano, TX) / Lahore, PK</em></p>
+              <p>Led application development, REST API design, and deployment; led a cross-functional team spanning Android, mobile, frontend, and database engineering. Projects: DrivePoints, Avosplay, FlushApp.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Backend and DevOps Engineer</h4>
+              <span class="date-badge">Jan 2020 to Jan 2021</span>
+              <p><em>Meecube, Shanghai, China</em></p>
+              <p>SafeRoutes trucking fleet platform. Flask microservices, ETL pipelines with Apache Airflow, Jenkins CI/CD. Maintained a fork of open-source YApi API management platform.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Junior Data Scientist</h4>
+              <span class="date-badge">Sep 2019 to Jan 2020</span>
+              <p><em>Block Dynamics, Shanghai, China</em></p>
+              <p>Bitcoin and Ethereum transaction analysis for anti-money-laundering and anomaly classification.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Earlier Roles (2016 to 2019)</h4>
+              <p>Java Intern at KSJ Cloud; .NET Intern at Wicresoft; Associate Software Engineer at TSCreators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Research ======= -->
+    <section id="research" class="section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Research</h2>
+        </div>
+        <p data-aos="fade-up">Selected research projects. Full list on <a href="https://scholar.google.com/citations?user=w1_pqnoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+        <!-- Project 1 -->
+        <div class="research-project row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-3">
+            <img src="assets/img/research-fl-poisoning.svg" alt="FL Poisoning Defense research figure placeholder" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <span class="status-badge">IEEE ITSC 2026, Best Paper Award Shortlist</span>
+            <h4>Poisoning Defense for Vehicular Federated Learning</h4>
+            <p><strong>Problem:</strong> In federated learning across vehicles, a few malicious clients can target safety-critical traffic sign classes. Common gradient filters missed this targeted attack.</p>
+            <p><strong>Approach:</strong> Designed a server-side defense that compares each client's predictions on a small probe set with symmetric KL divergence. Evaluated with MobileNetV2 on GTSRB, 10 clients, non-IID (Dirichlet) data, benchmarked against cosine similarity, MAD, Wasserstein, and Mahalanobis defenses.</p>
+            <p><strong>Status:</strong> IEEE ITSC 2026, Best Paper Award shortlist. A journal extension to stronger and adaptive attackers is in preparation.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="research-project row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-3">
+            <img src="assets/img/research-ev-charging.svg" alt="EV Charging Security research figure placeholder" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <span class="status-badge">USENIX VehicleSec 2026 Demo</span>
+            <h4>Secure EV Charging Communication</h4>
+            <p><strong>Problem:</strong> The ISO 15118 charging handshake exposed a key in plaintext.</p>
+            <p><strong>Approach:</strong> Implemented and validated certificateless, non-interactive key establishment based on identity-based cryptography on real charging hardware (QCA7000 powerline communication modems).</p>
+            <p><strong>Status:</strong> USENIX VehicleSec 2026 demo. A full paper on a plug-and-charge relay defense is in preparation.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="research-project row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-3">
+            <img src="assets/img/research-adversarial-attacks.svg" alt="Adversarial Attacks on Vision and Security Models placeholder" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <span class="status-badge">IEEE SATC 2026</span>
+            <h4>Adversarial Attacks on Vision and Security Models</h4>
+            <p>Evasion attacks on traffic sign recognition and on network traffic classifiers. Comparison of GAN and conditional denoising diffusion models for query-free adversarial malware generation (IEEE SATC 2026, third author).</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="research-project row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-3">
+            <img src="assets/img/research-adversarial-patches.svg" alt="Adversarial Patches Against Aerial Vehicle Detection placeholder" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <span class="status-badge">NSF REU 2026 (Mentored and Led)</span>
+            <h4>Adversarial Patches Against Aerial Vehicle Detection</h4>
+            <p>An undergraduate NSF REU project mentored and led: universal adversarial patches on car rooftops that hide vehicles from YOLO-based detection in aerial drone imagery (VisDrone), with segmentation masks keeping patches physically placeable. Co-mentored with Dr. Alsharif.</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="research-project row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-3">
+            <img src="assets/img/research-fl-traffic.svg" alt="Privacy-Preserving Federated Traffic Prediction placeholder" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <span class="status-badge">NSF REU 2025 (Mentored and Led)</span>
+            <h4>Privacy-Preserving Federated Traffic Prediction</h4>
+            <p>Privacy-preserving federated learning for traffic flow prediction across roadside units, using multi-client functional encryption secure under DDH, with robust aggregation, gradient filtering, and quantization, under a semi-honest traffic management center and malicious roadside units.</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="research-project row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-3">
+            <img src="assets/img/research-privacy-preserving.svg" alt="Privacy-Preserving Computation placeholder" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <span class="status-badge">IEEE ICWS 2024 / TechRxiv 2024 / IEEE ISDFS 2024</span>
+            <h4>Privacy-Preserving Computation</h4>
+            <p>Encrypted inference on edge devices with CKKS homomorphic encryption (IEEE ICWS 2024); encrypted search over large image matrices with precision-preserving encryption (TechRxiv 2024); privacy-enhanced remote sensing image restoration with federated learning (IEEE ISDFS 2024).</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Publications ======= -->
+    <section id="publications">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Publications</h2>
+        </div>
+        <p data-aos="fade-up">Full list on <a href="https://scholar.google.com/citations?user=w1_pqnoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+        <div data-aos="fade-up" data-aos-delay="100">
+          <p class="pub-section-title">Journal Articles</p>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Efficient and Privacy-Preserving ConvLSTM-based Detection of Electricity Theft Cyber-Attacks in Smart Grids.</span>
+              <span class="pub-venue"> IEEE Access, 2024.</span>
+              <span class="pub-role"> Second Author.</span>
+            </li>
+          </ul>
+
+          <p class="pub-section-title">Conference and Symposium Papers</p>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Mitigating Targeted Poisoning in Vehicular Federated Traffic Sign Classification via KL-Divergence Detection.</span>
+              <span class="pub-venue"> IEEE 29th International Conference on Intelligent Transportation Systems (ITSC), 2026.</span>
+              <span class="pub-role"> First Author.</span>
+              <span class="pub-award">Best Paper Award Shortlist</span>
+            </li>
+            <li>
+              <span class="pub-title">Demo: Certificateless and Non-Interactive Key Establishment for Secure CCS EV Charging.</span>
+              <span class="pub-venue"> 4th USENIX Symposium on Vehicle Security and Privacy (VehicleSec), 2026.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Query-Free Adversarial Malware Generation Using Conditional Denoising Diffusion.</span>
+              <span class="pub-venue"> IEEE International Conference on Secure and Trustworthy Computing (SATC), 2026.</span>
+              <span class="pub-role"> Third Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Model-Decoupled Federated Learning: Exploring Database Adaptability and Neural Architectural Dynamics in Federated Learning.</span>
+              <span class="pub-venue"> 2024.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Privacy-Preserving Artificial Intelligence on Edge Devices: A Homomorphic Encryption Approach.</span>
+              <span class="pub-venue"> 31st IEEE International Conference on Web Services (ICWS), 2024.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Privacy-Enhanced Image Restoration in Remote Sensing via Federated Learning.</span>
+              <span class="pub-venue"> 12th IEEE International Symposium on Digital Forensics and Security (ISDFS), 2024.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Exploring the Efficacy of Data-Decoupled Federated Learning for Image Classification and Medical Imaging Analysis.</span>
+              <span class="pub-venue"> FL4Data-Mining Workshop, ACM SIGKDD, 2023.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Data Provenance Based System for Classification and Linear Regression in Distributed Machine Learning.</span>
+              <span class="pub-venue"> SATE Conference Proceedings, 2019.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+            <li>
+              <span class="pub-title">Object Detection Boosting Using Object Attributes in Detect and Describe Framework.</span>
+              <span class="pub-venue"> IEEE 31st International Conference on Tools with Artificial Intelligence (ICTAI), 2019.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+          </ul>
+
+          <p class="pub-section-title">Preprints</p>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Advancing Privacy in Data Mining: Seamless Homomorphic Searches and Precision-Preserving Encryption.</span>
+              <span class="pub-venue"> TechRxiv, 2024.</span>
+              <span class="pub-role"> First Author.</span>
+            </li>
+          </ul>
+
+          <p class="pub-section-title">Manuscripts in Preparation</p>
+          <ul class="pub-list">
+            <li>Manuscripts in preparation (3): titles confidential.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Teaching ======= -->
+    <section id="teaching" class="section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Teaching and Mentoring</h2>
+        </div>
+        <div class="row">
+          <!-- Teaching -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Teaching</h3>
+            <div class="teaching-item">
+              <strong>Teaching Assistant</strong>, University of Nevada, Reno<br>
+              Database Management Systems (CS 457/657), Fall 2023 to Spring 2024. Lab sessions, assignment support, grading, and office hours.
+            </div>
+            <div class="teaching-item">
+              <strong>Teaching Assistant</strong>, University of Nevada, Reno<br>
+              Testing and DevOps (CS 333), January 2022.
+            </div>
+            <div class="teaching-item">
+              <strong>Part-time Lecturer</strong>, Pakistan Institute of Engineering and Technology, Multan<br>
+              Sep 2016 to Aug 2017. Database Management Systems and Programming (undergraduate).
+            </div>
+            <div class="teaching-item">
+              <strong>Web Development Instructor</strong>, Punjab Skill Development Fund<br>
+              Oct 2016 to May 2017. Taught web development to underprivileged learners aged 14 to 54 under a Government of Punjab contract.
+            </div>
+
+            <h3 class="resume-title mt-4">Teaching Interests</h3>
+            <p>Programming, Database Systems, Software Engineering, Web Development, Artificial Intelligence, Machine Learning, Data Science, Cybersecurity, Information Technology; new courses in Security of Machine Learning and AI for Connected Systems.</p>
+          </div>
+
+          <!-- Mentoring and Honors -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">NSF REU Research Mentoring (2023 to 2026)</h3>
+            <div class="teaching-item"><strong>Summer 2026 (UA):</strong> Adversarial patch attacks against drone-based vehicle detection.</div>
+            <div class="teaching-item"><strong>Summer 2025 (UA):</strong> Privacy-preserving federated learning for traffic flow prediction.</div>
+            <div class="teaching-item"><strong>Summer 2024 (UA):</strong> Poisoning detection in federated electricity theft detection.</div>
+            <div class="teaching-item"><strong>Summer 2023 (UNR):</strong> Model-decoupled federated learning; resulted in a first-author publication.</div>
+            <div class="teaching-item">All four projects were completed; one former mentee went on to a software engineering internship.</div>
+
+            <h3 class="resume-title mt-4">Honors and Service</h3>
+            <ul class="honors-list">
+              <li>Best Paper Award shortlist, IEEE ITSC 2026</li>
+              <li>Graduate School Travel Grant, The University of Alabama (USENIX VehicleSec 2026), 2026</li>
+              <li>5th place, Capture the Flag challenge, UNR cybersecurity conference, 2023</li>
+              <li>Chinese Government Scholarship (CSC), 2017</li>
+              <li>Academic Excellence Award, NFC Institute of Engineering and Technology, 2015</li>
+              <li>Reviewer: China Communications, ACM Transactions on Knowledge Discovery from Data (TKDD), IEEE ISDFS 2027, and other ACM and IEEE venues</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-note">To connect, please reach out on LinkedIn.</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jahanxb-khan/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://scholar.google.com/citations?user=w1_pqnoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar profile"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://github.com/jahanxb" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="bx bxl-github"></i></a>
+    </div>
+    <div class="copyright">&copy; 2026 Muhammad Jahanzeb Khan</div>
+  </footer>
+
+  <a href="#" class="back-to-top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/dist/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

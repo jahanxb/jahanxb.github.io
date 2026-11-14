@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <rect width="400" height="220" fill="#FDF5F7" rx="6"/>
+  <!-- Bar chart -->
+  <rect x="40" y="60" width="40" height="120" fill="#9E1B32" opacity="0.8"/>
+  <rect x="100" y="40" width="40" height="140" fill="#9E1B32"/>
+  <rect x="160" y="80" width="40" height="100" fill="#9E1B32" opacity="0.6"/>
+  <rect x="220" y="30" width="40" height="150" fill="#C41E3A"/>
+  <rect x="280" y="70" width="40" height="110" fill="#9E1B32" opacity="0.7"/>
+  <!-- Axis -->
+  <line x1="30" y1="180" x2="340" y2="180" stroke="#700D22" stroke-width="2"/>
+  <line x1="30" y1="20" x2="30" y2="180" stroke="#700D22" stroke-width="2"/>
+  <!-- Labels -->
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#9E1B32" font-weight="700">FL Poisoning Defense — replace with research figure</text>
+</svg>
