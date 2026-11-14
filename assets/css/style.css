@@ -312,8 +312,9 @@ img { max-width: 100%; }
   font-weight: 800;
   white-space: nowrap;
 }
-.ho-i { font-size: 14px; color: rgba(158,27,50,0.5); }
-.ho-o { font-size: 12px; color: rgba(158,27,50,0.3); }
+.ho-i { font-size: 16px; color: rgba(158,27,50,0.55); }
+.ho-m { font-size: 14px; color: rgba(158,27,50,0.38); }
+.ho-o { font-size: 13px; color: rgba(158,27,50,0.28); }
 @media (max-width: 768px) { .hero-orbit { display: none; } }
 
 @media (max-width: 768px) {

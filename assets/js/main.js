@@ -83,30 +83,31 @@
     AOS.init({ duration: 700, once: true });
   }
 
-  // Hero orbit animation
+  // Hero orbit animation — 3 rings
   var orbitEl = document.querySelector('.hero-orbit');
   if (orbitEl) {
-    var innerItems = orbitEl.querySelectorAll('.ho-i');
-    var outerItems = orbitEl.querySelectorAll('.ho-o');
+    var rings = [
+      { items: orbitEl.querySelectorAll('.ho-i'), r: 22, period: 30,  dir:  1 },
+      { items: orbitEl.querySelectorAll('.ho-m'), r: 37, period: 50,  dir: -1 },
+      { items: orbitEl.querySelectorAll('.ho-o'), r: 52, period: 72,  dir:  1 }
+    ];
     var t0 = null;
+    var TAU = 2 * Math.PI;
     function vmin() { return Math.min(window.innerWidth, window.innerHeight) / 100; }
     function orbitStep(ts) {
       if (!t0) t0 = ts;
       var secs = (ts - t0) / 1000;
       var vm = vmin();
-      var ri = 28 * vm;
-      var ro = 44 * vm;
-      var ni = innerItems.length;
-      var no = outerItems.length;
-      var TAU = 2 * Math.PI;
-      for (var i = 0; i < ni; i++) {
-        var a = (secs / 35) * TAU + (i / ni) * TAU;
-        innerItems[i].style.transform = 'translate(' + (Math.cos(a) * ri).toFixed(1) + 'px,' + (Math.sin(a) * ri).toFixed(1) + 'px)';
-      }
-      for (var j = 0; j < no; j++) {
-        var b = -(secs / 55) * TAU + (j / no) * TAU;
-        outerItems[j].style.transform = 'translate(' + (Math.cos(b) * ro).toFixed(1) + 'px,' + (Math.sin(b) * ro).toFixed(1) + 'px)';
-      }
+      rings.forEach(function(ring) {
+        var r = ring.r * vm;
+        var n = ring.items.length;
+        for (var i = 0; i < n; i++) {
+          var a = ring.dir * (secs / ring.period) * TAU + (i / n) * TAU;
+          ring.items[i].style.transform =
+            'translate(' + (Math.cos(a) * r).toFixed(1) + 'px,' +
+                           (Math.sin(a) * r).toFixed(1) + 'px)';
+        }
+      });
       requestAnimationFrame(orbitStep);
     }
     requestAnimationFrame(orbitStep);
