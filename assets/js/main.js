@@ -83,4 +83,33 @@
     AOS.init({ duration: 700, once: true });
   }
 
+  // Hero orbit animation
+  var orbitEl = document.querySelector('.hero-orbit');
+  if (orbitEl) {
+    var innerItems = orbitEl.querySelectorAll('.ho-i');
+    var outerItems = orbitEl.querySelectorAll('.ho-o');
+    var t0 = null;
+    function vmin() { return Math.min(window.innerWidth, window.innerHeight) / 100; }
+    function orbitStep(ts) {
+      if (!t0) t0 = ts;
+      var secs = (ts - t0) / 1000;
+      var vm = vmin();
+      var ri = 28 * vm;
+      var ro = 44 * vm;
+      var ni = innerItems.length;
+      var no = outerItems.length;
+      var TAU = 2 * Math.PI;
+      for (var i = 0; i < ni; i++) {
+        var a = (secs / 35) * TAU + (i / ni) * TAU;
+        innerItems[i].style.transform = 'translate(' + (Math.cos(a) * ri).toFixed(1) + 'px,' + (Math.sin(a) * ri).toFixed(1) + 'px)';
+      }
+      for (var j = 0; j < no; j++) {
+        var b = -(secs / 55) * TAU + (j / no) * TAU;
+        outerItems[j].style.transform = 'translate(' + (Math.cos(b) * ro).toFixed(1) + 'px,' + (Math.sin(b) * ro).toFixed(1) + 'px)';
+      }
+      requestAnimationFrame(orbitStep);
+    }
+    requestAnimationFrame(orbitStep);
+  }
+
 })();
