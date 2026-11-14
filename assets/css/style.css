@@ -455,6 +455,19 @@ section { padding: 60px 0; overflow: hidden; }
 }
 .resume-item p { font-size: 14px; margin-bottom: 4px; color: #555; }
 .resume-item em { font-style: italic; color: #444; }
+.badge-parttime {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 2px 8px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
 
 /* Research */
 .research-project {
